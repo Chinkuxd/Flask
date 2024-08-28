@@ -8,7 +8,7 @@ workdir /Flask
 copy . /chinku.py
 
 # Install the application dependencies
-RUN pip install -r requirements.txt
+run pip install -r requirements.txt
 
 # Define the entry point for the container
 cmd ["flask", "run", "host=0.0.0.0"]
